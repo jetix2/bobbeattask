@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #1D2B64;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 550px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  color: white;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+
+
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-button:hover {
+  transition-duration: 0.4s;
+  border-radius: 20px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+
+  
+}
+
+/* icons*/
+
+
+
+.delete-icon {
+  margin-right: 5px;
+  color: rgb(24, 1, 1);
+  font-size: 20px;
+}
+
+.brand {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.round {
+  color: red;
+  border: solid 5px black;
+  border-radius: 50%;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.completed {
+  transition-duration: 0.3s;
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.8;
+  background: white;
+}
+span {
+  color:white;
+  border: solid black 3px
+}
+span:hover{
+  background-color:#f44336; /* Red */
+  color: white;
+  transition-duration: 0.4s;
+}
+
+
+
+.button {
+  transition-duration: 0.4s;
+  border-radius: 20px;
+}
+
+
+
+.button:hover {
+  background-color:#f44336; /* Red */
+  color: white;
+}
